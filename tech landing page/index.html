@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Landing Page</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #0f0f0f;
+        color: white;
+        overflow-x: hidden;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background: rgba(0,0,0,0.8);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    header h1 {
+        color: #00f2fe;
+        font-size: 24px;
+    }
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #00f2fe;
+    }
+    .home {
+        height: 100vh;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    .home h2 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    .home p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .home button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 30px;
+        background: #0f0f0f;
+        color: #00f2fe;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .home button:hover {
+        background: white;
+        color: black;
+    }
+    section {
+        padding: 80px 50px;
+        text-align: center;
+    }
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .card {
+        background: #1c1c1c;
+        padding: 20px;
+        border-radius: 15px;
+        width: 280px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 242, 254, 0.3);
+    }
+    footer {
+        background: #0f0f0f;
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+    footer p {
+        color: #aaa;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>TechBrand</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <h2>Innovating the Future</h2>
+    <p>Your trusted partner in tech solutions</p>
+    <button>Get Started</button>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Modern and responsive web applications built with cutting-edge technologies.</p>
+        </div>
+        <div class="card">
+            <h3>App Development</h3>
+            <p>Custom mobile solutions tailored to your business needs.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Solutions</h3>
+            <p>Secure and scalable cloud integration for your business growth.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate developers, designers, and innovators dedicated to creating world-class tech solutions.</p>
+</section>
+
+<footer id="contact">
+    <p>© 2025 TechBrand | All Rights Reserved</p>
+</footer>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
