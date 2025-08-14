@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F9B233;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li {
+    margin-left: 30px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #F9B233;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.home {
+    background-color: #111;
+    padding: 50px 0;
+}
+.home-text h1 {
+    font-size: 2.5rem;
+}
+.home-text h1 span {
+    color: #F9B233;
+}
+.home-text h2 {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+.home-text p {
+    margin: 20px 0;
+    max-width: 400px;
+}
+.btn {
+    background-color: #F9B233;
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+    
+}
+.btn:hover {
+    background-color: #ffcc4d;
+}
+.home-img img {
+    max-width: 300px;
+    border-radius: 20%;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background: #1a1a1a;
+}
+.stat {
+    margin: 0 20px;
+    text-align: center;
+}
+.stat h3 {
+    color: #F9B233;
+    font-size: 2rem;
+}
+
+/* Services */
+.services {
+    padding: 50px;
+    text-align: center;
+}
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    background: #F9B233;
+    color: #111;
+}
+
+/* Works */
+.works {
+    padding: 50px;
+    text-align: center;
+}
+.work-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.work-item img {
+    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.work-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonial */
+.testimonial {
+    background: #1a1a1a;
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Contact */
+.contact {
+    padding: 30px;
+    background: #000;
+    text-align: center;
+}
+.contact a {
+    color: #F9B233;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
